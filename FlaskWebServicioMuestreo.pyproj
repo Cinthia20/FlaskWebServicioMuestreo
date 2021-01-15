@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>06fd4b39-21b5-4134-abff-66433b8d60a0</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>FlaskWebServicioMuestreo</Name>
+    <RootNamespace>FlaskWebServicioMuestreo</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="FlaskWebServicioMuestreo\muestreo.py" />
+    <Compile Include="runserver.py" />
+    <Compile Include="FlaskWebServicioMuestreo\__init__.py" />
+    <Compile Include="FlaskWebServicioMuestreo\vistas.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FlaskWebServicioMuestreo\" />
+    <Folder Include="FlaskWebServicioMuestreo\static\" />
+    <Folder Include="FlaskWebServicioMuestreo\static\content\" />
+    <Folder Include="FlaskWebServicioMuestreo\static\fonts\" />
+    <Folder Include="FlaskWebServicioMuestreo\static\scripts\" />
+    <Folder Include="FlaskWebServicioMuestreo\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IISProfile.pubxml" />
+    <None Include="IISProfile1.pubxml" />
+    <Content Include="requirements.txt" />
+    <Content Include="FlaskWebServicioMuestreo\static\content\bootstrap.css" />
+    <Content Include="FlaskWebServicioMuestreo\static\content\bootstrap.min.css" />
+    <Content Include="FlaskWebServicioMuestreo\static\content\site.css" />
+    <Content Include="FlaskWebServicioMuestreo\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="FlaskWebServicioMuestreo\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FlaskWebServicioMuestreo\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="FlaskWebServicioMuestreo\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\bootstrap.js" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\bootstrap.min.js" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\jquery-1.10.2.js" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\jquery.validate.js" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\jquery.validate.min.js" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\respond.js" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\respond.min.js" />
+    <Content Include="FlaskWebServicioMuestreo\static\scripts\_references.js" />
+    <Content Include="FlaskWebServicioMuestreo\templates\about.html" />
+    <Content Include="FlaskWebServicioMuestreo\templates\contact.html" />
+    <Content Include="FlaskWebServicioMuestreo\templates\index.html" />
+    <Content Include="FlaskWebServicioMuestreo\templates\layout.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
